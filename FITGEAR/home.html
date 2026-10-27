@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>FITGEAR | Home Strength Equipment</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">FITGEAR</div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+
+          <button class="login-icon-btn" id="openLoginBtn">
+            <i class="fas fa-user-circle"></i>
+          </button>
+
+          <button
+            class="calc-icon-btn"
+            id="openCalcBtnHidden"
+            style="display: none"
+          >
+            <i class="fas fa-calculator"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="hero-content">
+          <h1>
+            BUILD YOUR <span class="hero-highlight">STRENGTH</span><br />AT HOME
+          </h1>
+          <div class="hero-buttons">
+            <a href="#" class="btn-primary">Shop Now</a>
+            <a href="#" class="btn-outline">View Equipment</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="coverpage.jpg"
+            alt="Hero strength training"
+            onerror="
+              this.src =
+                'https://placehold.co/600x400/eef3ea/3a6b2f?text=FITGEAR+hero'
+            "
+          />
+        </div>
+      </div>
+
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="dumbells.jpg"
+              alt="Dumbbells"
+              onerror="
+                this.src =
+                  'https://placehold.co/280x220/eef3ea/3a6b2f?text=Dumbbells'
+              "
+            />
+          </div>
+          <h3>DUMBBELLS</h3>
+          <a href="#" class="shop-link">Shop Now →</a>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="Treadmills.jpg"
+              alt="Treadmills"
+              onerror="
+                this.src =
+                  'https://placehold.co/280x220/eef3ea/3a6b2f?text=Treadmills'
+              "
+            />
+          </div>
+          <h3>TREADMILLS</h3>
+          <a href="#" class="shop-link">Shop Now →</a>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img
+              src="homegyms.jpg"
+              alt="Home Gyms"
+              onerror="
+                this.src =
+                  'https://placehold.co/280x220/eef3ea/3a6b2f?text=Home+Gyms'
+              "
+            />
+          </div>
+          <h3>HOME GYMS</h3>
+          <a href="#" class="shop-link">Shop Now →</a>
+        </div>
+      </div>
+
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid">
+        <div
+          class="product-card"
+          data-name="Adjustable Dumbbells"
+          data-price="199.99"
+        >
+          <div class="product-img">
+            <img
+              src="dumbells.jpg"
+              alt="Dumbbells"
+              onerror="
+                this.src =
+                  'https://placehold.co/300x200/f4faf0/3a6b2f?text=Adjustable'
+              "
+            />
+          </div>
+          <div class="product-title">Adjustable Dumbbells</div>
+          <div class="price">$199.99</div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div
+          class="product-card"
+          data-name="Foldable Treadmill"
+          data-price="499.99"
+        >
+          <div class="product-img">
+            <img
+              src="FoldableTreadmill.jpg"
+              alt="Foldable Treadmill"
+              onerror="
+                this.src =
+                  'https://placehold.co/300x200/f4faf0/3a6b2f?text=Treadmill'
+              "
+            />
+          </div>
+          <div class="product-title">Foldable Treadmill</div>
+          <div class="price">$499.99</div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div
+          class="product-card"
+          data-name="Power Rack System"
+          data-price="799.99"
+        >
+          <div class="product-img">
+            <img
+              src="Power_Rack_System.jpg"
+              alt="Power Rack"
+              onerror="
+                this.src =
+                  'https://placehold.co/300x200/f4faf0/3a6b2f?text=Power+Rack'
+              "
+            />
+          </div>
+          <div class="product-title">Power Rack System</div>
+          <div class="price">$799.99</div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div
+          class="product-card"
+          data-name="Exercise Bike Pro"
+          data-price="349.99"
+        >
+          <div class="product-img">
+            <img
+              src="Exercise_Bike_Pro.jpg"
+              alt="Exercise Bike"
+              onerror="
+                this.src =
+                  'https://placehold.co/300x200/f4faf0/3a6b2f?text=Exercise+Bike'
+              "
+            />
+          </div>
+          <div class="product-title">Exercise Bike Pro</div>
+          <div class="price">$349.99</div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <h4>Free Shipping</h4>
+          <p>On Orders Over $100</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✅</div>
+          <h4>100% Satisfaction Guarantee</h4>
+          <p>Hassle-free returns</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📞</div>
+          <h4>24/7 Customer Support</h4>
+          <p>Real humans, real help</p>
+        </div>
+      </div>
+      <footer>
+        <div>© 2026 FITGEAR — Strength starts here.</div>
+        <div>Home · Shop · About · Contact</div>
+      </footer>
+    </div>
+
+    <div id="floatingCalc" class="floating-calc">
+      <div class="calc-close" id="closeCalcBtn">✕</div>
+      <div class="led-calc">
+        <div class="screen">
+          <input type="text" id="result" readonly value="0" />
+          <div class="led-strip" id="ledStrip">
+            <span class="led-dot"></span><span class="led-dot"></span
+            ><span class="led-dot"></span><span class="led-dot"></span
+            ><span class="led-dot"></span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn clear" id="calcClear">C</button
+          ><button class="btn operator" id="calcBackspace">⌫</button
+          ><button class="btn operator" id="calcPercent">%</button
+          ><button class="btn operator" id="calcDivide">÷</button>
+          <button class="btn" id="calc7">7</button
+          ><button class="btn" id="calc8">8</button
+          ><button class="btn" id="calc9">9</button
+          ><button class="btn operator" id="calcMultiply">×</button>
+          <button class="btn" id="calc4">4</button
+          ><button class="btn" id="calc5">5</button
+          ><button class="btn" id="calc6">6</button
+          ><button class="btn operator" id="calcSubtract">−</button>
+          <button class="btn" id="calc1">1</button
+          ><button class="btn" id="calc2">2</button
+          ><button class="btn" id="calc3">3</button
+          ><button class="btn operator" id="calcAdd">+</button>
+          <button class="btn zero" id="calc0">0</button
+          ><button class="btn" id="calcDot">.</button
+          ><button class="btn equals" id="calcEquals">=</button>
+        </div>
+        <div class="signature">
+          <i class="fas fa-bolt"></i> <span>LED · live colors</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE CALCULATOR ICON - RIGHT SIDE CENTERED -->
+    <button class="calc-side-icon" id="sideCalcBtn">
+      <i class="fas fa-calculator"></i>
+    </button>
+
+    <!-- LOGIN / REGISTER MODAL -->
+    <div id="loginModal" class="login-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3><i class="fas fa-dumbbell"></i> FITGEAR Access</h3>
+          <button class="modal-close" id="closeModalBtn">&times;</button>
+        </div>
+        <div class="modal-tabs">
+          <button class="tab-btn active" data-tab="login">LOGIN</button>
+          <button class="tab-btn" data-tab="register">REGISTER</button>
+        </div>
+        <div class="modal-body">
+          <div id="loginForm" class="form-panel">
+            <div class="form-group">
+              <label>Email</label
+              ><input
+                type="email"
+                id="loginEmail"
+                placeholder="hello@fitgear.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Password</label
+              ><input
+                type="password"
+                id="loginPassword"
+                placeholder="••••••••"
+              />
+            </div>
+            <button class="submit-btn" id="submitLoginBtn">
+              <i class="fas fa-sign-in-alt"></i> Sign In
+            </button>
+            <div class="demo-note">
+              <i class="fas fa-info-circle"></i> Demo: any email / password
+              works
+            </div>
+          </div>
+          <div id="registerForm" class="form-panel" style="display: none">
+            <div class="form-group">
+              <label>Full Name</label
+              ><input type="text" id="regName" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label>Email</label
+              ><input
+                type="email"
+                id="regEmail"
+                placeholder="hello@fitgear.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Password</label
+              ><input
+                type="password"
+                id="regPassword"
+                placeholder="Create password"
+              />
+            </div>
+            <button class="submit-btn" id="submitRegisterBtn">
+              <i class="fas fa-user-plus"></i> Create Account
+            </button>
+            <div class="demo-note">
+              <i class="fas fa-check-circle"></i> Instant demo account creation
+            </div>
+          </div>
+          <div class="form-footer" id="formFooterMsg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartToast" class="toast-msg">✨ Added to cart</div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
